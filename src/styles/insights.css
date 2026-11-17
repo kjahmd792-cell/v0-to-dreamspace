@@ -1,0 +1,22 @@
+/* insights styles */
+.tax-invoice-modal { width: min(760px, 100%); max-height: calc(100vh - 40px); overflow-y: auto; }
+.tax-invoice-buttons { display: flex; align-items: center; gap: 8px; }
+.tax-invoice-sheet { padding: 18px; border: 1px solid #e3ecea; border-radius: 12px; background: #fff; }
+.tax-invoice-header { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 14px; border-bottom: 1px dashed #d8e4e1; }
+.tax-invoice-header > div { display: flex; flex-direction: column; gap: 3px; color: #6b7f7c; font-size: 11px; }
+.tax-invoice-header strong { color: #1f4a47; font-size: 15px; }
+.tax-qr { width: 96px; height: 96px; flex: 0 0 auto; color: #173b39; }
+.tax-invoice-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 14px 0; }
+.tax-invoice-meta div { padding: 8px 10px; border-radius: 8px; background: #f6faf9; }
+.tax-invoice-meta dt { color: #8b9b98; font-size: 9px; }
+.tax-invoice-meta dd { margin: 2px 0 0; color: #2c4a47; font-size: 11px; font-weight: 650; }
+.tax-invoice-totals { display: grid; gap: 6px; width: min(320px, 100%); margin: 14px 0 0 auto; }
+.tax-invoice-totals div { display: flex; justify-content: space-between; color: #5f7471; font-size: 11px; }
+.tax-invoice-totals dd { margin: 0; }
+.tax-invoice-totals .grand { padding: 8px 0; border-block: 1px solid #e3ecea; color: #146d67; font-size: 13px; font-weight: 750; }
+.tax-invoice-footer { margin-top: 14px; color: #9aa9a6; font-size: 9px; text-align: center; }
+@media print {
+  body * { visibility: hidden; }
+  .tax-invoice-sheet, .tax-invoice-sheet * { visibility: visible; }
+  .tax-invoice-sheet { position: absolute; inset: 0; border: 0; }
+}

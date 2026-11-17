@@ -1,0 +1,36 @@
+.fa-modal { width: min(780px, calc(100vw - 32px)); max-height: 88dvh; overflow-y: auto; font-size: 12px; }
+.fa-form { display: grid; gap: 18px; }
+.fa-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.fa-form .field-label, .fa-actions .field-label, .fa-row .field-label, .fa-member .field-label { display: grid; gap: 7px; font-size: 11px; color: #425f5b; }
+.fa-form input:not([type=checkbox]), .fa-form select, .fa-actions input, .fa-row select, .fa-member select { box-sizing: border-box; width: 100%; border: 1px solid #dce8e4; border-radius: 9px; padding: 10px 12px; background: #fbfdfc; color: #244b46; font: inherit; min-width: 0; }
+.fa-form input:focus, .fa-form select:focus, .fa-actions input:focus { outline: 2px solid #5fb3a6; outline-offset: 2px; }
+.fa-actions { display: flex; flex-wrap: wrap; align-items: end; gap: 10px; margin-block: 16px; }
+.fa-actions .field-label { flex: 1; min-width: 160px; }
+.fa-tabs { display: flex; flex-wrap: wrap; gap: 8px; padding-block: 14px; margin-block: 12px; border-block: 1px solid #e8efed; }
+.fa-list { display: grid; gap: 2px; margin-block: 12px; }
+.fa-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 13px 4px; border-bottom: 1px solid #e8efed; font-size: 12px; }
+.fa-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 16px; }
+.fa-chips .count-badge { display: inline-flex; align-items: center; gap: 5px; background: #f0f7f4; color: #146d67; }
+.fa-chips .icon-action { width: 24px; height: 24px; }
+.fa-chips svg { width: 13px; height: 13px; }
+.fa-fieldset { border: 1px solid #e8efed; border-radius: 12px; padding: 16px; }
+.fa-fieldset legend { color: #146d67; padding-inline: 8px; font-size: 12px; }
+.fa-check { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.fa-check input { accent-color: #146d67; }
+.fa-chart { height: 240px; width: 100%; margin-block: 20px; }
+.fa-brand { display: flex; align-items: center; gap: 12px; padding: 16px; border-radius: 12px; background: #f0f7f4; color: #146d67; }
+.fa-brand img, .fa-logo-preview { width: 60px; height: 60px; object-fit: contain; border-radius: 10px; background: white; }
+.fa-switch { width: 40px; height: 23px; padding: 3px; border: 0; border-radius: 20px; background: #cddbd6; cursor: pointer; display: flex; align-items: center; flex-shrink: 0; }
+.fa-switch span { display: block; width: 17px; height: 17px; background: white; border-radius: 50%; transition: transform .18s; box-shadow: 0 1px 3px #163d3326; }
+.fa-switch[aria-checked=true] { background: #146d67; }
+.fa-switch[aria-checked=true] span { transform: translateX(-17px); }
+.fa-member { flex-wrap: wrap; gap: 14px; }
+.fa-member .member-info { min-width: 160px; flex: 1; }
+.fa-member select { max-width: 180px; }
+.fa-permissions { min-width: 650px; margin-bottom: 18px; }
+.fa-permissions td, .fa-permissions thead th { text-align: center; }
+.fa-permission { display: inline-flex; align-items: center; justify-content: center; height: 30px; width: 34px; border: 1px solid #e8efed; border-radius: 8px; background: #f7faf9; color: #8b9f98; cursor: pointer; }
+.fa-permission[aria-pressed=true] { color: #146d67; background: #e5f3ed; border-color: #c9e4d9; }
+.fa-permission svg { width: 15px; height: 15px; }
+@media (max-width: 900px) { .fa-modal { width: min(680px,calc(100vw - 32px)); } .fa-member .member-info { min-width: 140px; } }
+@media (max-width: 600px) { .fa-grid { grid-template-columns: 1fr; } .fa-modal { width: calc(100vw - 20px); padding: 18px; max-height: 90dvh; } .fa-row { flex-wrap: wrap; } .fa-actions > button { flex: 1; } .fa-tabs > button { flex: 1; white-space: nowrap; padding-inline: 8px; } .fa-member .field-label { flex: 1; } .fa-chart { height: 200px; } }
